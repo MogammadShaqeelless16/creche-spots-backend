@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const jwtCheck = auth({
-    audience: "http://localhost:8000",
+    audience: "https://creche-spots-backend.onrender.com",
     issuerBaseURL: process.env.ISSUER_BASE_URL, // Use the environment variable
     tokenSigningAlg: "RS256"
 })
